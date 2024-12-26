@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    max-width: 1344px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none; 
+}
+.header_container{
+    margin-bottom: 32px;
+}
+.header_title{
+    margin: 25px 0;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+.header_des{
+    max-width: 768px;
+    text-align: center;
+    color: rgb(63, 63, 63);
+    margin: 0 auto;
+}
+.main_container{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+}
+.card_container{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+.card_container:hover .card_img{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
+.card_img {
+    position: relative;
+    overflow: hidden;
+    height: 14rem;
+}
+.cimg{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.card_details{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.card_title{
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    line-height: 15px;
+    margin-bottom: 12px;
+}
+.card_title:hover .card_title{
+    color: rgb(31, 31, 138);
+}
+.card_des{
+    color: rgb(113, 107, 107);
+    font-size: 16px;
+}
+.card_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 15px;
+    padding-bottom: 15px;
+}
+.author{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+.avatar{
+    height: 2.5rem;
+    width: 2.5rem;
+    overflow: hidden;
+    border: 1px solid rgb(150, 147, 147);
+    border-radius: 50%;
+    background-color: rgb(243, 239, 239);
+}
+.author_info{
+    display: flex;
+    flex-direction: column;
+}
+.author_name{
+    color: rgb(38, 38, 149);
+}
+
+.author_date{
+    color: rgb(136, 126, 126);
+}
+.card_btn{
+    font-size: 15px;
+    border: 1px solid rgb(76, 71, 71);
+    border-radius: 4px;
+    line-height: 1.3rem;
+    padding: 0.25rem 0.5rem;
+    color: rgb(0, 0, 0);
+}
